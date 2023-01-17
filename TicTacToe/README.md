@@ -2,5 +2,6 @@
 Simple TicTacToe game by adding a few React components in the HTML
 
 # UI design
-![](./img/startGame.png)
-![](./img/finishGame.png)
+
+<img src="./img/startGame.png" alt="Start of the game" width="350px">
+<img src="./img/finishGame.png" alt="End of the game" width="350px">
