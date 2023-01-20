@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curso JS">
+    <title>Tabla de Multiplicar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+    <div class="contenedor">
+        <div onmouseover="this.style.backgroundColor='lightcyan'">PRUEBAS TABLA DE MULTIPLICACIÓN</div>
+        <div id="titulo"> Tabla de multiplicar</div>
+        <div id="info">
+            <p>Tabla de multiplicar 10x10, de 100 elementos, comenzando en el número indicado</p>
+        </div>
+        <label for="dato"> Coloca el número con el que quieres que comience la tabla: </label>
+        <input type="text" id="dato" size="4" class="dcha" value=" " onfocus="this.select()">
+        <br>
+        <button onclick="TablaMultiplicar()" class="boton_azul"> <b>Ver tabla</b> </button>
+        <div id="resultado"></div>
+    </div>
+    <div class="bombillo">
+        <button onclick="document.getElementById('myImage').src='https://www-w3schools-com.translate.goog/js/pic_bulbon.gif'">Enciende el Bombillo</button>
+
+        <img id=myImage src="https://www-w3schools-com.translate.goog/js/pic_bulboff.gif" style="width: 60px">
+
+        <button onclick="document.getElementById('myImage').src='https://www-w3schools-com.translate.goog/js/pic_bulboff.gif'">Apaga el Bombillo</button>
+    </div>
+    <script src="main.js"></script> 
+</body>
+</html>

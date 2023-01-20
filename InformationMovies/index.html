@@ -5,13 +5,19 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css">
-    <title>Frozen</title>
+    <title>Information Movies</title>
   </head>
   <body>
 
-  <h1 class="title">FROZEN</h1>
-  <div id="container"></div>
+  <h1 class="title">Information of movies and actors</h1>
 
+  <form id="myform">
+    <input type="text" name="word" id="word" placeholder="Write film or actor">
+    <button type="button" onclick="capturaWord()" >Search</button>
+  </form>
+  <div id="container"></div>  
+ 
   <script src="app.js"></script>
+
   </body>
 </html>
