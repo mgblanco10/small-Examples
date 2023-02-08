@@ -13,7 +13,7 @@ function capturaWord(){
         fetch(`https://imdb8.p.rapidapi.com/auto-complete?q=${word}`,{
             "method": "GET",
             "headers":{
-                'X-RapidAPI-Key':APIKEY,
+                'X-RapidAPI-Key':'1cb56fc762mshc5095ac78bbf0e3p104de5jsn8e462a09cd8d',
                 'X-RapidAPI-Host': 'imdb8.p.rapidapi.com'
             }
         })

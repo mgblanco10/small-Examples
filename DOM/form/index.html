@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas Formulario</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 200px;
+            float: left;
+            margin: 20px;
+        }
+        .dashed{
+            border: 3px dashed black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM, eventos y funciones</h1>
+    <div class="box">
+        <form action="#" method="POST" id="form" onsubmit="return false;">
+            <label for="name">Name:</label> <br/>
+            <input type="text" name="name" id="name"/> <br/>
+
+            <label for="lastName">Last Name:</label> <br/>
+            <input type="text" name="lastName" id="lastName"/> <br/>
+
+            <label for="age">Age:</label> <br/>
+            <input type="number" name="age" id="age"/> <br/> 
+
+            <input type="submit" value="send" id="submit"/> <br/>
+        </form>
+    </div>
+
+    <div class="box dashed">
+        <h3>User information</h3>
+        <hr>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
