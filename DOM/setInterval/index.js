@@ -30,4 +30,23 @@ window.addEventListener('load', function(){
         alert("Start loop");
         interval();
     });
+
+    let pressButton = document.querySelector('#button');
+
+    //click
+    pressButton.addEventListener('click', function(){
+        this.style.border = "8px solid black";
+    });
+
+    //mouse over
+    pressButton.addEventListener('mouseover', function(){
+        pressButton.style.background = "yellow";
+    });
+
+    //mouse out
+    pressButton.addEventListener('mouseout', function(){
+        pressButton.style.background = "red";
+    });
+
+
 });
