@@ -17,7 +17,9 @@ let divJanet = document.querySelector("#janet");
         .then(data => data.json())
         .then(user=>{
             mostrarJanet(user.data);
-
+        })
+        .catch(error =>{
+            console.log(error)
         });
         
 
@@ -70,5 +72,4 @@ function getInfo (){
         }, 3000);
       
     });
-
 }
