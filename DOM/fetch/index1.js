@@ -8,12 +8,18 @@ let divJanet = document.querySelector("#janet");
         .then(users =>{ 
             listUser(users.data);
             
+            return getInfo();
+        })
+        .then(data =>{
+            console.log(data);
             return getJanet();
         })
         .then(data => data.json())
         .then(user=>{
             mostrarJanet(user.data);
+
         });
+        
 
     function getUsers(){
         return fetch('https://reqres.in/api/users');
@@ -41,9 +47,28 @@ let divJanet = document.querySelector("#janet");
         avatar.src = user.avatar;
         avatar.width = '100';
 
-
         divJanet.appendChild(name);
         divJanet.appendChild(avatar);
         document.querySelector("#janet .loading").style.display ='none';
-
     }
+
+//Promesa desde 0 llamada en getJanet con setTimeout de 3000
+function getInfo (){
+    let person ={
+        name: "Monica",
+        lastName: "Blanco",
+        email: "mgblanco1001@gmail.com",
+        phone: "+34 682731765"
+    };
+    return new Promise((resolve, reject)=>{
+        let personString = "";
+        setTimeout(function(){
+            personString = JSON.stringify(person);
+            if (typeof personString != 'string' || personString == '') return reject (error);
+    
+            return resolve(personString);
+        }, 3000);
+      
+    });
+
+}
