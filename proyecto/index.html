@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto con Js</title>
+
+    <!-- Estilos css -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="styles/purple.css">
+
+    <!---JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!---Slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!---Moment Js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/locale/es-do.min.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body>
+    <div id="changeTheme">
+        <div id="purple"></div>
+        <div id="pink"></div>
+        <div id="blue"></div>
+        <div id="green"></div>
+    </div>
+    <section id="global">
+        <header>
+            <div id="logo">
+                <h1>Proyecto Js</h1>
+            </div>
+            <div class="clearFix"> </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Calculadora</a></li>
+                    <li><a href="#">Reloj</a></li>
+                    <li><a href="#">Sobre Mi</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="slider">
+            <div class="bxslider">
+                <div><img src="img/imgUx1.png" title="Ui Ux examples"></div>
+                <div><img src="img/imgUx.png" title="Information Ui examples"></div>
+                <div><img src="img/imgUx2.png" title="img Ux examples" ></div>
+                <div><img src="img/imgUx4.png" title="img Ux examples" ></div>
+                <div><img src="img/imgUx5.png" title="img Ux examples" ></div>
+              </div>
+        </div>
+        <section id="content">
+            <div id="posts">
+              <!--Cargan posts desde json-->
+
+            </div>
+            <aside id="sidebar">
+                <div id="about">
+                    <h4>Qué hago??</h4>
+                    <img src="./img/imgUx3.png"/>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, adipisci? Numquam voluptates similique velit repudiandae, repellat iste, maiores dolores, rerum mollitia doloribus expedita perferendis quibusdam! Odio repellendus aut magni illo.</p>
+                </div>
+                <div id="loguin">
+                    <h4> <span>Identificate</span></h4>
+                    <form>
+                        <label for="name"> Nombre </label>
+                        <input type="text" name="name"/>
+
+                        <label for="email"> Email </label>
+                        <input type="text" name="email"/>
+
+                        <label for="password"> Password </label>
+                        <input type="password" name="password"/>
+
+                        <input type="submit" value="Entrar"/>
+
+
+                    </form>
+
+                </div>
+            </aside>
+            <div class="clearFix"> </div>
+        </section>
+    </section>
+    <footer>
+        Realizado por Mónica Blanco Calviño
+        <a href="#" class="subir">Ir arriba</a>
+    </footer>
+    
+</body>
+</html>

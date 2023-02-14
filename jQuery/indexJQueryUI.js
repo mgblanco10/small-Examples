@@ -24,6 +24,4 @@ $(document).ready(function(){
     //calendario DatePicker
     $('#calendario').datepicker();
 
-    //tabs
-
 });

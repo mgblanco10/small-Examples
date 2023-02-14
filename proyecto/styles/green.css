@@ -1,0 +1,16 @@
+body{
+    background: url('../img/imgUx8.png');
+    background-attachment: fixed;
+}
+
+#logo{
+    background:green;
+}
+
+#menu li:hover{
+    background: green; 
+}
+
+.button{
+    background: green;
+}

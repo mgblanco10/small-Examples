@@ -1,0 +1,16 @@
+body{
+    background: url('../img/imgUx6.png');
+    background-attachment: fixed;
+}
+
+#logo{
+    background:  cornflowerblue;
+}
+
+#menu li:hover{
+    background: cornflowerblue;
+}
+
+.button{
+    background: cornflowerblue;
+}

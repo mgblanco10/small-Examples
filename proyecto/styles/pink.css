@@ -1,0 +1,16 @@
+body{
+    background: url('../img/imgUx7.png');
+    background-attachment: fixed;
+}
+
+#logo{
+    background:palevioletred;
+}
+
+#menu li:hover{
+    background: palevioletred;  
+}
+
+.button{
+    background: palevioletred;
+}
