@@ -1,13 +1,15 @@
-//slider
 $(document).ready(function(){
+    if(window.location.href.indexOf('index')> -1){
+        //slider
+        $('.bxslider').bxSlider({
+        mode: 'fade',
+        captions: true,
+        slideWidth: 1200, 
+        responsive: true
+        });
+    }
 
-    $('.bxslider').bxSlider({
-      mode: 'fade',
-      captions: true,
-      slideWidth: 1200, 
-      responsive: true
-    });
-
+    if(window.location.href.indexOf('index')> -1){
     //post
     let posts =[
     {
@@ -63,6 +65,7 @@ $(document).ready(function(){
         // console.log(post)
         $('#posts').append(post);
     });
+}
 
     // selector de tema
     let theme =$('#theme');
@@ -94,5 +97,43 @@ $(document).ready(function(){
         return false;
     });
 
+    //login falso
+    $("#login form").submit(function(){
+        let formName = $("#formName").val();
+
+        localStorage.setItem("formName", formName);
+    });
+
+    let formName = localStorage.getItem("formName");
+
+    if(formName != null && formName != "undefined"){
+        let abaoutParrafo =  $('#about p');
+
+        abaoutParrafo.html("<br> <strong> Bienvenido, "+ formName +'</strong>');
+        abaoutParrafo.append("<br> <a href='#' id='logout'>Cerrar Sessión </a>");
+
+        $('#login').hide();
+
+        $('#logout').click(function(){
+            localStorage.clear();
+            location.reload();
+        });
+    }
+
+    // Acordeon
+
+	if(window.location.href.indexOf('about') > -1){
+		$("#acordeon").accordion();
+	}
+
+
+	// Reloj
+	if(window.location.href.indexOf('reloj') > -1){
+
+		setInterval(function(){
+				let reloj = moment().format("hh:mm:ss");
+				$('#reloj').html(reloj);
+		}, 1000);
+	}
 
 });

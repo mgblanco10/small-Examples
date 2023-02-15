@@ -69,7 +69,8 @@
     padding: 7px;
 }
 
-.post h2{
+h2{
+    font-family: Helvetica, Arial;
     font-size: 30px;
     color: #333;
 }
@@ -126,7 +127,9 @@
 
 form input[type="text"],
 form input[type="password"],
-form input[type="email"]{
+form input[type="email"],
+form input[type="number"],
+form input [type="date"] {
     padding: 5px;
     border-radius: 2px;
     border-color: #333;
@@ -204,3 +207,42 @@ footer{
     display: block;
     float: right;
 }
+
+#box{
+	width: 60%;
+	float: left;
+	margin-top:40px;
+}
+
+#acordeon{
+	margin-top: 20px;
+}
+
+#reloj{
+	font-size: 40px;
+	font-weight: bold;
+	font-family: Helvetica, Arial;
+	color: #333;
+	/* border: 5px dashed #333; */
+	width: 30%;
+	padding: 30px;
+	margin: 0px auto;
+}
+
+#formContact{
+	width: 50%;
+	margin-top: 15px;
+	font-family: Helvetica, Arial;
+}
+
+#formContact label{
+	display: block;
+	width: 100%;
+	margin-top: 5px;
+}
+
+#buttonForm{
+    margin-top: 10px;
+    padding: 5px;
+}
+
