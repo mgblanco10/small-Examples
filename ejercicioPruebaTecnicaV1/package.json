@@ -1,0 +1,16 @@
+{
+  "name": "pruebatecnicav1",
+  "version": "1.0.0",
+  "description": "en vainilla con test",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.4.3"
+  }
+}
