@@ -6,7 +6,7 @@ si es multiplo de 5 imprimir buzz
 si es multiplo y si es multiplo de 3 y 5 imprimir fizzbuzz
 
 -Crear package.json 
-npm init 
+npm init -y
 
 -Instalar en modo desarrollo la libreria jest
 npm i -D jest
