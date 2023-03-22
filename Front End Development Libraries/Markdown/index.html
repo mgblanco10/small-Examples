@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>FCC: Simple React Markdown Previewer</title>
+  </head>
+  <body class="clickup-chrome-ext_installed">
+    <div id="app">
+        <div>
+            <div class="editorWrap">
+                <div class="toolbar"> <i class="fa fa-arrows-alt"></i> Editor </div>
+                <textarea id="editor" type="text"># Welcome to my React Markdown Previewer!</textarea>
+            </div>
+            <div class="converter"></div>
+            <div class="previewWrap">
+                <div class="toolbar"><i class="fa fa-arrows-alt"></i> Previewer</div>
+                <div id="preview"><h1 id="welcome-to-my-react-markdown-previewer">Welcome to my React Markdown Previewer!</h1>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script crossorigin="" src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin="" src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.3/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <script src="bundle.js"></script>
+
+</body></html>

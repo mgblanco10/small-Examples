@@ -1,0 +1,26 @@
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+h1 {
+    height: 300px;
+    width: 800px;
+    text-align: center;
+   
+}
+
+textarea, #preview {
+    height: 80px;
+    width: 200px;
+}
+
+textarea {
+    resize: none;
+}
+
+.col-md-6 {
+    padding: 15px;
+    box-sizing: border-box;
+}

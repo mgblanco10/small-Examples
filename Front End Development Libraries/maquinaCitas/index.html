@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Machine</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+  
+  <body class="m-0 row justify-content-center">
+
+      <div id="quote-box">
+        <div class="quote-text" style="opacity: 1;">
+          <i class="fa fa-quote-left"> </i><span id="text">Definiteness of purpose is the starting point of all achievement.</span>
+        </div>
+      
+        <div class="quote-author" style="opacity: 1;">- <span id="author">W. Clement Stone</span></div>
+      
+       <div class="buttons row-xs-9 float-right">
+          <a class="button" id="tweet-quote" title="Tweet this quote!" target="_top" href="https://twitter.com/intent/tweet?hashtags=quotes&amp;related=freecodecamp&amp;text=%22Definiteness%20of%20purpose%20is%20the%20starting%20point%20of%20all%20achievement.%22%20W.%20Clement%20Stone">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a class="button" id="tumblr-quote" title="Post this quote on tumblr!" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=quote&amp;tags=quotes,freecodecamp&amp;caption=W.%20Clement%20Stone&amp;content=Definiteness%20of%20purpose%20is%20the%20starting%20point%20of%20all%20achievement.&amp;canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&amp;shareSource=tumblr_share_button">
+            <i class="fa fa-tumblr"></i>
+          </a>
+          <button class="button bg-primary text-white" id="new-quote" >New quote</button>
+        </div>
+      </div>
+ 
+      <div class="footer d-block p-4 justify-content-center">by <a href="https://codepen.io/hezag/"> Mónica Blanco</a></div>
+  
+ 
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="script.js" type="text/javascript">
+    </script>
+  </body>
+</html>
