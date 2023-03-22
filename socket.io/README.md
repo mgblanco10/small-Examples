@@ -4,3 +4,8 @@ Here is a simple example of making a chat with socket io and node, here I don't 
 ## Image example Chat
 
 ![](./img/chatSocketNode.png)
+
+### How to start project
+
+monica@Merida ~/Documents/GitHub/react-Examples/socket.io (main) $ npm start
+

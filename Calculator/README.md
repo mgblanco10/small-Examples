@@ -12,3 +12,7 @@ Simple calculator made with HTML, CSS AND JS. Created with a mobile format and w
 
 ## Calculator Ligth
 <img src="./img/ligthCalculator.png" alt="Ligth Calculator" width="350px"/>
+
+### How to start project
+
+Open with Live Server index.html

@@ -4,3 +4,6 @@ Here the chessboard is made with a "for" bubble and the "if" conditional to pain
 
 # UI design
 ![](./img/chessboard.png)
+
+### How to start project
+Open with Live Server index.html

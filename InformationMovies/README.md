@@ -10,5 +10,14 @@ The styles were worked with CSS and details such as hover were provided, so that
 ![](./img/searchFrozen.png)
 ![](./img/searchActorJavier.png)
 
+### How to start project
+
+Open with Live Server index.html
+
+
+
+
+
+
 
 
