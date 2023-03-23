@@ -3,7 +3,8 @@ Escribir una función que al pasarle un número:
     - Muestra "fizz" si es múltiplo de 3.
     - Muestra "buzz" si es múltiplo de 5.
     - Muestra "fizzbuzz" si es múltiplo de 3 y 5.
-    - Muestra "woff" si es 7.
+    - Muestra "woff" si es igual 7.
+    - Muestra "fizzwoff" si es 21.
     - Muestra el número si no es múltiplo de ninguna de las anteriores. 
 */
 
@@ -14,6 +15,7 @@ Escribir una función que al pasarle un número:
     if(number % 15 === 0) return "fizzbuzz"
     if( number % 3 === 0) return "fizz"
     if( number % 5 === 0 ) return "buzz"
+    if (number === 7 ) return "woff"
 
     return number 
 }*/
