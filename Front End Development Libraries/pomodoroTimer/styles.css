@@ -1,0 +1,75 @@
+body {
+    background: #e4b5dc;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    margin: 8px;
+}
+
+body #container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    display: block;
+}
+
+body #container .main-title {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+body #container .btn-level, body #container .length-control {
+    display: inline-block;
+}
+
+body #container .length-control {
+    width: 250px;
+}
+
+body #container .timer {
+    border: 7px solid #13353a;
+    margin: 20px auto 10px auto;
+    width: 200px;
+    height: 80px;
+    border-radius: 50px;
+    position: relative;
+}
+
+.author {
+    text-align: center;
+    font-family: Share Tech Mono, sans;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #a61793;
+}
+
+.author a {
+    text-decoration: none;
+    color: #f3f4f5;
+    line-height: 26px;
+}
+
+audio:not([controls]) {
+    display: none !important;
+}
+
+audio {
+    width: 300px;
+    height: 54px;
+}
+
+
+
+
+
+
+
+
+
+
+
