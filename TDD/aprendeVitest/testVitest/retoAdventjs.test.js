@@ -1,12 +1,7 @@
 // RETOS JS https://adventjs.dev/es#retos
 
 import { describe, expect, it } from "vitest";
-
-const retoAdventjs = (from, to)=>{
-    // if(from === undefined) throw new Error ('from is required')
-    if(from != 'string') throw new Error ('from is not a string')
-    if (typeof to != 'string') throw new Error ('to is not a string')
-} 
+import { retoAdventjs } from "../src/retoAdventjs";
 
 describe("retoAdventjs", ()=>{
     it('should be a function',()=>{
@@ -23,6 +18,27 @@ describe("retoAdventjs", ()=>{
 
      it('should throw if second parameter is not a string',()=>{
         expect (()=>retoAdventjs('a')).toThrow()
+     })
+
+      it('should return a boolean',()=>{
+        expect (retoAdventjs('a', 'b')).toBeTypeOf('boolean')
+     })
+
+      it('should return false if strings providers have different length',()=>{
+        expect (retoAdventjs('abc','de')).toBe(false)
+     })
+
+
+      it('should return false if strings providers have different length even with same unique letter',()=>{
+        expect (retoAdventjs('aab','ab')).toBe(false)
+     })
+
+      it('should return false if strings providers have different numbers of unique letters',()=>{
+        expect (retoAdventjs('abc','ddd')).toBe(false)
+     })
+
+       it('should return false if strings has different order of transformation',()=>{
+        expect (retoAdventjs('XBOX','XXBO')).toBe(false)
      })
 
 
