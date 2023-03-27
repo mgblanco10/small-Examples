@@ -1,0 +1,23 @@
+/* En columna ahora mismo estilos en Línea
+main {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+} */
+
+/* info a un lado de la foto pongo un section envolviendo lo que traigo de api */
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+section img{
+    max-width: 320px;
+    height: auto;
+}
+
