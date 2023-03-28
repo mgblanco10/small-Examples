@@ -19,3 +19,13 @@ function wrapping(gifts) {
     "******\n*game*\n******",
     "*******\n*socks*\n*******"
   ] */
+
+  // otra forma
+  function envolverRegalos (regalos){
+    return regalos.map(regalo =>{
+        return "*".repeat(regalo.length+2)+'\n*'+ regalo+'*\n'+ "*".repeat(regalo.length+2)
+    })
+  }
+
+  const regalos = ['gato', 'juego', 'calzado']
+  console.log(envolverRegalos(regalos))
